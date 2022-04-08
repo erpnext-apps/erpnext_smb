@@ -66,7 +66,7 @@ app_license = "MIT"
 # ------------
 
 # before_install = "erpnext_smb.install.before_install"
-# after_install = "erpnext_smb.install.after_install"
+after_install = "erpnext_smb.install.after_install"
 
 # Uninstallation
 # ------------
@@ -104,13 +104,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"User": {
+		"validate": "erpnext_smb.install.update_module_profile",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
