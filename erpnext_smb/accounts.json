@@ -1,0 +1,241 @@
+{
+    "charts": [],
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Journal Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Reconciliation\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Financial Statements\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"GST Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}}]",
+    "creation": "2022-04-10 15:55:39.366617",
+    "docstatus": 0,
+    "doctype": "Workspace",
+    "for_user": "",
+    "hide_custom": 0,
+    "icon": "accounting",
+    "idx": 0,
+    "label": "Accounts",
+    "links": [
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Financial Statements",
+      "link_count": 7,
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "General Ledger",
+      "link_count": 0,
+      "link_to": "General Ledger",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Trial Balance for Party",
+      "link_count": 0,
+      "link_to": "Trial Balance for Party",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Trial Balance",
+      "link_count": 0,
+      "link_to": "Trial Balance",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Balance Sheet",
+      "link_count": 0,
+      "link_to": "Balance Sheet",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Profit and Loss Statement",
+      "link_count": 0,
+      "link_to": "Profit and Loss Statement",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Cash Flow",
+      "link_count": 0,
+      "link_to": "Cash Flow",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Consolidated Financial Statement",
+      "link_count": 0,
+      "link_to": "Consolidated Financial Statement",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "GST Reports",
+      "link_count": 8,
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GSTR-1",
+      "link_count": 0,
+      "link_to": "GSTR-1",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GSTR-2",
+      "link_count": 0,
+      "link_to": "GSTR-2",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "GSTR-3B",
+      "link_count": 0,
+      "link_to": "GSTR 3B Report",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GST Sales Register",
+      "link_count": 0,
+      "link_to": "GST Sales Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GST Purchase Register",
+      "link_count": 0,
+      "link_to": "GST Purchase Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GST Itemised Sales Register",
+      "link_count": 0,
+      "link_to": "GST Itemised Sales Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GST Itemised Purchase Register",
+      "link_count": 0,
+      "link_to": "GST Itemised Purchase Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Lower Deduction Certificate",
+      "link_count": 0,
+      "link_to": "Lower Deduction Certificate",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Other Reports",
+      "link_count": 2,
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Payment Period Based On Invoice Date",
+      "link_count": 0,
+      "link_to": "Payment Period Based On Invoice Date",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Customer Credit Balance",
+      "link_count": 0,
+      "link_to": "Customer Credit Balance",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     }
+    ],
+    "modified": "2022-04-10 17:24:00.973366",
+    "modified_by": "Administrator",
+    "module": "Accounts",
+    "name": "Accounts",
+    "owner": "Administrator",
+    "parent_page": "",
+    "public": 1,
+    "roles": [],
+    "sequence_id": 4.0,
+    "shortcuts": [
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Payment Entry",
+      "link_to": "Payment Entry",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Journal Entry",
+      "link_to": "Journal Entry",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Payment Reconciliation",
+      "link_to": "Payment Reconciliation",
+      "type": "DocType"
+     }
+    ],
+    "title": "Accounts"
+   }

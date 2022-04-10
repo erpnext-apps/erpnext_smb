@@ -52,31 +52,13 @@ def disable_workspaces():
 			pass
 
 def add_custom_workspaces():
-	add_accounting_workspace()
-	add_buying_workspace()
-	add_selling_workspace()
-	add_inventory_workspace()
+	for workspace in ('accounts', 'inventory', 'sales_and_purchase', 'masters', 'setup'):
+		add_workspace(workspace)
 
-def add_accounting_workspace():
-	accounting_workspace = read_json('accounting')
-	accounting_workspace = json.loads(accounting_workspace)
-	frappe.get_doc(accounting_workspace).insert()
-
-def add_buying_workspace():
-	buying_workspace = read_json('buying')
-	buying_workspace = json.loads(buying_workspace)
-	frappe.get_doc(buying_workspace).insert()
-
-def add_selling_workspace():
-	selling_workspace = read_json('selling')
-	selling_workspace = json.loads(selling_workspace)
-	frappe.get_doc(selling_workspace).insert()
-
-def add_inventory_workspace():
-	stock_workspace = read_json('inventory')
-	stock_workspace = json.loads(stock_workspace)
-	frappe.get_doc(stock_workspace).insert()
-
+def add_workspace(file_name):
+	workspace = read_json(file_name)
+	workspace = json.loads(workspace)
+	frappe.get_doc(workspace).insert()
 
 def read_json(name):
 	file_path = os.path.join(os.path.dirname(__file__), "{name}.json".format(name=name))
