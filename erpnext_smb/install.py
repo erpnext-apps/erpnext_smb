@@ -2,6 +2,7 @@ import frappe
 import json
 import os
 from frappe.utils import cstr
+from erpnext_smb.master_setup import setup_masters
 
 def after_install():
 	create_module_profile()
@@ -10,6 +11,7 @@ def after_install():
 	disable_workspaces()
 	add_custom_workspaces()
 	disable_onboarding()
+	setup_masters()
 
 def create_module_profile():
 	module_profile = frappe.new_doc('Module Profile')
