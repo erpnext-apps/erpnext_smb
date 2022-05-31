@@ -15,6 +15,7 @@
       "is_query_report": 0,
       "label": "Groups",
       "link_count": 3,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -53,6 +54,7 @@
       "is_query_report": 0,
       "label": "Items",
       "link_count": 3,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -91,6 +93,7 @@
       "is_query_report": 0,
       "label": "Pricing",
       "link_count": 4,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -139,6 +142,7 @@
       "is_query_report": 0,
       "label": "UOM",
       "link_count": 2,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -167,6 +171,7 @@
       "is_query_report": 0,
       "label": "Address and Contacts",
       "link_count": 2,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -195,6 +200,7 @@
       "is_query_report": 0,
       "label": "Others",
       "link_count": 2,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -219,14 +225,34 @@
       "type": "Link"
      }
     ],
-    "modified": "2022-04-10 17:18:05.525398",
+    "modified": "2022-05-28 18:16:21.432908",
     "modified_by": "Administrator",
     "module": "Setup",
     "name": "Masters",
     "owner": "Administrator",
     "parent_page": "",
     "public": 1,
-    "roles": [],
+    "quick_lists": [],
+    "roles": [
+     {
+      "role": "Accounts Manager"
+     },
+     {
+      "role": "Accounts User"
+     },
+     {
+      "role": "Sales Manager"
+     },
+     {
+      "role": "Sales User"
+     },
+     {
+      "role": "Purchase Manager"
+     },
+     {
+      "role": "Purchase User"
+     }
+    ],
     "sequence_id": 1.0,
     "shortcuts": [
      {

@@ -1,7 +1,7 @@
 from . import __version__ as app_version
 
 app_name = "erpnext_smb"
-app_title = "Erpnext Smb"
+app_title = "ERPNext SMB"
 app_publisher = "Frappe Technologies"
 app_description = "ERPNext SMB Setup"
 app_icon = "octicon octicon-file-directory"
@@ -107,7 +107,20 @@ after_install = "erpnext_smb.install.after_install"
 doc_events = {
 	"User": {
 		"validate": "erpnext_smb.install.update_module_profile",
+	},
+	"User Permission": {
+		"validate": "erpnext_smb.limits.validate_limits"
+	},
+	"Role": {
+		"validate": "erpnext_smb.limits.validate_role"
 	}
+}
+
+allowed_roles = {
+	'Basic': ["Accounts Manager", "Accounts User", "Purchase Manager", "Purchase User",
+		"Sales Manager", "Sales User", "Stock User", "Stock Manager", "Item Manager",
+		"Purchase Master Manager"],
+	'Essential': ["Manufacturing User", "Manufacturing Manager"],
 }
 
 # Scheduled Tasks

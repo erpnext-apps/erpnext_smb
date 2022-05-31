@@ -1,6 +1,6 @@
 {
    "charts": [],
-   "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Invoice\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Selling Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Buying Reports\",\"col\":4}}]",
+   "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Quotation\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Order\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Note\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Material Request\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Order\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Receipt\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Invoice\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Selling Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Buying Reports\",\"col\":4}}]",
    "creation": "2022-04-09 21:13:29.920339",
    "docstatus": 0,
    "doctype": "Workspace",
@@ -14,7 +14,8 @@
      "hidden": 0,
      "is_query_report": 0,
      "label": "Selling Reports",
-     "link_count": 4,
+     "link_count": 6,
+     "link_type": "DocType",
      "onboard": 0,
      "type": "Card Break"
     },
@@ -61,8 +62,29 @@
     {
      "hidden": 0,
      "is_query_report": 0,
+     "label": "Sales Analytics",
+     "link_count": 0,
+     "link_to": "Sales Analytics",
+     "link_type": "Report",
+     "onboard": 0,
+     "type": "Link"
+    },
+    {
+     "hidden": 0,
+     "is_query_report": 0,
+     "label": "Sales Order Analysis",
+     "link_count": 0,
+     "link_to": "Sales Order Analysis",
+     "link_type": "Report",
+     "onboard": 0,
+     "type": "Link"
+    },
+    {
+     "hidden": 0,
+     "is_query_report": 0,
      "label": "Buying Reports",
-     "link_count": 4,
+     "link_count": 6,
+     "link_type": "DocType",
      "onboard": 0,
      "type": "Card Break"
     },
@@ -105,18 +127,71 @@
      "link_type": "Report",
      "onboard": 0,
      "type": "Link"
+    },
+    {
+     "hidden": 0,
+     "is_query_report": 0,
+     "label": "Purchase Analytics",
+     "link_count": 0,
+     "link_to": "Purchase Analytics",
+     "link_type": "Report",
+     "onboard": 0,
+     "type": "Link"
+    },
+    {
+     "hidden": 0,
+     "is_query_report": 0,
+     "label": "Purchase Order Analysis",
+     "link_count": 0,
+     "link_to": "Purchase Order Analysis",
+     "link_type": "Report",
+     "onboard": 0,
+     "type": "Link"
     }
    ],
-   "modified": "2022-04-09 22:53:51.487409",
+   "modified": "2022-05-29 11:29:46.704363",
    "modified_by": "Administrator",
    "module": "Desk",
    "name": "Sales and Purchase",
    "owner": "Administrator",
    "parent_page": "",
    "public": 1,
-   "roles": [],
+   "quick_lists": [],
+   "roles": [
+    {
+     "role": "Accounts User"
+    },
+    {
+     "role": "Accounts Manager"
+    },
+    {
+     "role": "Sales User"
+    },
+    {
+     "role": "Sales Manager"
+    },
+    {
+     "role": "Purchase User"
+    },
+    {
+     "role": "Purchase Manager"
+    },
+    {
+     "role": "Stock User"
+    },
+    {
+     "role": "Stock Manager"
+    }
+   ],
    "sequence_id": 2.0,
    "shortcuts": [
+    {
+     "color": "Grey",
+     "doc_view": "List",
+     "label": "Sales Order",
+     "link_to": "Sales Order",
+     "type": "DocType"
+    },
     {
      "color": "Grey",
      "doc_view": "List",
@@ -127,8 +202,36 @@
     {
      "color": "Grey",
      "doc_view": "List",
+     "label": "Material Request",
+     "link_to": "Material Request",
+     "type": "DocType"
+    },
+    {
+     "color": "Grey",
+     "doc_view": "List",
+     "label": "Delivery Note",
+     "link_to": "Delivery Note",
+     "type": "DocType"
+    },
+    {
+     "color": "Grey",
+     "doc_view": "List",
      "label": "Sales Invoice",
      "link_to": "Sales Invoice",
+     "type": "DocType"
+    },
+    {
+     "color": "Grey",
+     "doc_view": "List",
+     "label": "Purchase Order",
+     "link_to": "Purchase Order",
+     "type": "DocType"
+    },
+    {
+     "color": "Grey",
+     "doc_view": "List",
+     "label": "Purchase Receipt",
+     "link_to": "Purchase Receipt",
      "type": "DocType"
     },
     {

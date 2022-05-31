@@ -15,6 +15,7 @@
       "is_query_report": 0,
       "label": "Financial Statements",
       "link_count": 7,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -91,96 +92,9 @@
      {
       "hidden": 0,
       "is_query_report": 0,
-      "label": "GST Reports",
-      "link_count": 8,
-      "onboard": 0,
-      "type": "Card Break"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 1,
-      "label": "GSTR-1",
-      "link_count": 0,
-      "link_to": "GSTR-1",
-      "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 1,
-      "label": "GSTR-2",
-      "link_count": 0,
-      "link_to": "GSTR-2",
-      "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
-      "label": "GSTR-3B",
-      "link_count": 0,
-      "link_to": "GSTR 3B Report",
-      "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 1,
-      "label": "GST Sales Register",
-      "link_count": 0,
-      "link_to": "GST Sales Register",
-      "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 1,
-      "label": "GST Purchase Register",
-      "link_count": 0,
-      "link_to": "GST Purchase Register",
-      "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 1,
-      "label": "GST Itemised Sales Register",
-      "link_count": 0,
-      "link_to": "GST Itemised Sales Register",
-      "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 1,
-      "label": "GST Itemised Purchase Register",
-      "link_count": 0,
-      "link_to": "GST Itemised Purchase Register",
-      "link_type": "Report",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
-      "label": "Lower Deduction Certificate",
-      "link_count": 0,
-      "link_to": "Lower Deduction Certificate",
-      "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
       "label": "Other Reports",
       "link_count": 2,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -203,16 +117,120 @@
       "link_type": "Report",
       "onboard": 0,
       "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "GST Reports",
+      "link_count": 8,
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GSTR-1",
+      "link_count": 0,
+      "link_to": "GSTR-1",
+      "link_type": "Report",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GSTR-2",
+      "link_count": 0,
+      "link_to": "GSTR-2",
+      "link_type": "Report",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "GSTR-3B",
+      "link_count": 0,
+      "link_to": "GSTR 3B Report",
+      "link_type": "DocType",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GST Sales Register",
+      "link_count": 0,
+      "link_to": "GST Sales Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GST Purchase Register",
+      "link_count": 0,
+      "link_to": "GST Purchase Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GST Itemised Sales Register",
+      "link_count": 0,
+      "link_to": "GST Itemised Sales Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "GST Itemised Purchase Register",
+      "link_count": 0,
+      "link_to": "GST Itemised Purchase Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Lower Deduction Certificate",
+      "link_count": 0,
+      "link_to": "Lower Deduction Certificate",
+      "link_type": "DocType",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
      }
     ],
-    "modified": "2022-04-10 17:24:00.973366",
+    "modified": "2022-05-31 17:53:56.403542",
     "modified_by": "Administrator",
     "module": "Accounts",
     "name": "Accounts",
     "owner": "Administrator",
     "parent_page": "",
     "public": 1,
-    "roles": [],
+    "quick_lists": [],
+    "roles": [
+     {
+      "role": "Accounts Manager"
+     },
+     {
+      "role": "Accounts User"
+     }
+    ],
     "sequence_id": 4.0,
     "shortcuts": [
      {

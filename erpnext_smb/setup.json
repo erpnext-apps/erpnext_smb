@@ -1,6 +1,6 @@
 {
     "charts": [],
-    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Chart Of Accounts\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fiscal Year\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Taxation\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Accounts\",\"col\":4}}]",
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Company\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Chart Of Accounts\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fiscal Year\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"System Settings\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Print Settings\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Taxation\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Settings\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Accounts\",\"col\":4}}]",
     "creation": "2022-04-10 16:19:08.430051",
     "docstatus": 0,
     "doctype": "Workspace",
@@ -13,8 +13,68 @@
      {
       "hidden": 0,
       "is_query_report": 0,
+      "label": "Accounts",
+      "link_count": 5,
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Accounting Period",
+      "link_count": 0,
+      "link_to": "Accounting Period",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Chart of Accounts Importer",
+      "link_count": 0,
+      "link_to": "Chart of Accounts Importer",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Opening Invoice Creation Tool",
+      "link_count": 0,
+      "link_to": "Opening Invoice Creation Tool",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Period Closing Voucher",
+      "link_count": 0,
+      "link_to": "Period Closing Voucher",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Mode of Payment",
+      "link_count": 0,
+      "link_to": "Mode of Payment",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
       "label": "Taxation",
       "link_count": 6,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -82,7 +142,7 @@
       "hidden": 0,
       "is_query_report": 0,
       "label": "Settings",
-      "link_count": 6,
+      "link_count": 7,
       "onboard": 0,
       "type": "Card Break"
      },
@@ -129,11 +189,22 @@
      {
       "hidden": 0,
       "is_query_report": 0,
+      "label": "Manufacturing Settings",
+      "link_count": 0,
+      "link_to": "Manufacturing Settings",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
       "label": "GST Settings",
       "link_count": 0,
       "link_to": "GST Settings",
       "link_type": "DocType",
       "onboard": 0,
+      "only_for": "India",
       "type": "Link"
      },
      {
@@ -145,76 +216,40 @@
       "link_type": "DocType",
       "onboard": 0,
       "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
-      "label": "Accounts",
-      "link_count": 5,
-      "onboard": 0,
-      "type": "Card Break"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
-      "label": "Company",
-      "link_count": 0,
-      "link_to": "Company",
-      "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
-      "label": "Accounting Period",
-      "link_count": 0,
-      "link_to": "Accounting Period",
-      "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
-      "label": "Chart of Accounts Importer",
-      "link_count": 0,
-      "link_to": "Chart of Accounts Importer",
-      "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
-      "label": "Opening Invoice Creation Tool",
-      "link_count": 0,
-      "link_to": "Opening Invoice Creation Tool",
-      "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
-     },
-     {
-      "hidden": 0,
-      "is_query_report": 0,
-      "label": "Period Closing Voucher",
-      "link_count": 0,
-      "link_to": "Period Closing Voucher",
-      "link_type": "DocType",
-      "onboard": 0,
-      "type": "Link"
      }
     ],
-    "modified": "2022-04-10 17:19:02.937140",
+    "modified": "2022-05-31 17:52:00.823347",
     "modified_by": "Administrator",
     "module": "Setup",
     "name": "Setup",
     "owner": "Administrator",
     "parent_page": "",
     "public": 1,
+    "quick_lists": [],
     "roles": [],
-    "sequence_id": 5.0,
+    "sequence_id": 18.0,
     "shortcuts": [
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Company",
+      "link_to": "Company",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "System Settings",
+      "link_to": "System Settings",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Print Settings",
+      "link_to": "Print Settings",
+      "type": "DocType"
+     },
      {
       "color": "Grey",
       "doc_view": "Tree",
