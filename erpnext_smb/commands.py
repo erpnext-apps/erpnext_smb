@@ -16,6 +16,7 @@ def update_site_plan(context, plan, site=None):
 		site = get_site(context)
 
 	frappe.init(site=site)
+	frappe.connect()
 
 	try:
 		update_site_config("plan", plan)
