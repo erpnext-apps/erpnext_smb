@@ -18,3 +18,17 @@ def validate_role(doc, method):
 	if frappe.session.user != "Administrator":
 		frappe.throw(_("Error"))
 
+def validate_custom_fields(doc, method):
+	plan = frappe.conf.plan
+
+	if plan != "Professional" and doc.owner != "Administrator":
+		frappe.throw(_("Customizations are not allowed in your current plan"))
+
+def validate_property_setter(doc, method):
+	plan = frappe.conf.plan
+
+	if plan != "Professional" and doc.owner != "Administrator":
+		frappe.throw(_("Customizations are not allowed in your current plan"))
+
+def add_plan_to_bootinfo(bootinfo):
+	bootinfo.plan = frappe.conf.plan

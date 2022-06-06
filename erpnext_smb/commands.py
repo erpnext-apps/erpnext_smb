@@ -6,7 +6,7 @@ from erpnext_smb.install import setup_roles
 
 @click.command("update-site-plan")
 @click.option("--site", help="site name")
-@click.argument("plan", type=click.Choice(["Basic", "Essential", "Professional"]))
+@click.argument("plan", type=click.Choice(["Free", "Basic", "Essential", "Professional"]))
 @pass_context
 def update_site_plan(context, plan, site=None):
 	print("Updating plan...")

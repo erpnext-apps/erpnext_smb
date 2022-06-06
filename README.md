@@ -1,4 +1,4 @@
-## Erpnext Smb
+## ERPNext SMB
 
 ERPNext SMB Setup
 

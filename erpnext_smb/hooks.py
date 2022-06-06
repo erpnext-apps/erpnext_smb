@@ -14,7 +14,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/erpnext_smb/css/erpnext_smb.css"
-# app_include_js = "/assets/erpnext_smb/js/erpnext_smb.js"
+app_include_js = "erpnext_smb.bundle.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/erpnext_smb/css/erpnext_smb.css"
@@ -106,22 +106,30 @@ after_install = "erpnext_smb.install.after_install"
 
 doc_events = {
 	"User": {
-		"validate": "erpnext_smb.install.update_module_profile",
+		"validate": ["erpnext_smb.install.update_module_profile"],
 	},
 	"User Permission": {
 		"validate": "erpnext_smb.limits.validate_limits"
 	},
 	"Role": {
 		"validate": "erpnext_smb.limits.validate_role"
+	},
+	"Custom Field": {
+		"validate": "erpnext_smb.limits.validate_custom_fields",
+	},
+	"Property Setter": {
+		"validate": "erpnext_smb.limits.validate_property_setter"
 	}
 }
 
 allowed_roles = {
 	'Basic': ["Accounts Manager", "Accounts User", "Purchase Manager", "Purchase User",
 		"Sales Manager", "Sales User", "Stock User", "Stock Manager", "Item Manager",
-		"Purchase Master Manager"],
+		"Purchase Master Manager", "Sales Master Manager"],
 	'Essential': ["Manufacturing User", "Manufacturing Manager"],
 }
+
+boot_session = "erpnext_smb.limits.add_plan_to_bootinfo"
 
 # Scheduled Tasks
 # ---------------
