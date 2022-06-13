@@ -125,7 +125,7 @@ doc_events = {
 allowed_roles = {
 	'Basic': ["Accounts Manager", "Accounts User", "Purchase Manager", "Purchase User",
 		"Sales Manager", "Sales User", "Stock User", "Stock Manager", "Item Manager",
-		"Purchase Master Manager", "Sales Master Manager"],
+		"Purchase Master Manager", "Sales Master Manager", "Site Admin"],
 	'Essential': ["Manufacturing User", "Manufacturing Manager"],
 }
 

@@ -22,7 +22,7 @@ $(document).on('list_sidebar_setup', function () {
 				</div>`).appendTo(upgrade_list);
 
 		upgrade_box.find('.btn-upgrade').on('click', () => {
-			frappe.set_route('usage-info');
+			window.location.href = "https://frappecloud.com/dashboard/saas/login"
 		});
 
 		upgrade_box.find('.close').on('click', () => {
