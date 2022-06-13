@@ -17,7 +17,6 @@ def after_install():
 	add_custom_workspaces()
 	disable_onboarding()
 	setup_masters()
-	set_trial_start_date()
 
 def create_module_profile():
 	module_profile = frappe.new_doc('Module Profile')
