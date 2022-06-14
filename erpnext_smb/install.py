@@ -67,7 +67,8 @@ def enable_workspace(workspace):
 	workspace_doc.save()
 
 def add_custom_workspaces():
-	for workspace in ('accounts', 'inventory', 'sales_and_purchase', 'masters', 'setup', 'manufacturing_smb'):
+	for workspace in ('accounts', 'inventory', 'sales', 'purchase', 
+		'masters', 'setup', 'manufacturing_smb'):
 		add_workspace(workspace)
 	
 	frappe.get_doc({
@@ -162,6 +163,8 @@ def add_site_admin_role():
 	add_permission("User", "Site Admin", 1)
 	update_permission_property("User", "Site Admin", 0, "write", 1)
 	update_permission_property("User", "Site Admin", 0, "create", 1)
+	update_permission_property("Role Profile", "Site Admin", 0, "write", 1)
+	update_permission_property("Role Profile", "Site Admin", 0, "create", 1)
 	update_permission_property("User", "Site Admin", 1, "write", 1)
 	update_permission_property("User", "Site Admin", 1, "create", 1)
 

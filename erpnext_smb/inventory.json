@@ -1,6 +1,6 @@
 {
     "charts": [],
-    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Reconciliation\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Landed Cost Voucher\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Stock Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Batch and Serial Nos\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Serial Items Reports\",\"col\":4}}]",
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Stock Reconciliation\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Landed Cost Voucher\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Receipt\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Note\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Stock Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Batch and Serial Nos\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Serial Items Reports\",\"col\":4}}]",
     "creation": "2022-04-09 21:30:00.379419",
     "docstatus": 0,
     "doctype": "Workspace",
@@ -15,6 +15,7 @@
       "is_query_report": 0,
       "label": "Batch and Serial Nos",
       "link_count": 2,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -43,6 +44,7 @@
       "is_query_report": 0,
       "label": "Serial Items Reports",
       "link_count": 3,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -81,6 +83,7 @@
       "is_query_report": 0,
       "label": "Stock Reports",
       "link_count": 6,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -145,16 +148,24 @@
       "type": "Link"
      }
     ],
-    "modified": "2022-04-10 17:22:06.458284",
+    "modified": "2022-06-14 09:03:32.166717",
     "modified_by": "Administrator",
     "module": "Stock",
     "name": "Inventory",
     "owner": "Administrator",
     "parent_page": "",
     "public": 1,
+    "quick_lists": [],
     "roles": [],
     "sequence_id": 3.0,
     "shortcuts": [
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Purchase Receipt",
+      "link_to": "Purchase Receipt",
+      "type": "DocType"
+     },
      {
       "color": "Grey",
       "doc_view": "List",
@@ -167,6 +178,13 @@
       "doc_view": "List",
       "label": "Stock Reconciliation",
       "link_to": "Stock Reconciliation",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Delivery Note",
+      "link_to": "Delivery Note",
       "type": "DocType"
      },
      {

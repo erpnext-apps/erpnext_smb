@@ -1,6 +1,6 @@
 {
     "charts": [],
-    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Journal Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Reconciliation\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Financial Statements\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"GST Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}}]",
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Journal Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Entry\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Payment Reconciliation\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sales Invoice\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Invoice\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Bank Reconciliation Tool\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Taxation\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Opening and Closing\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Financial Statements\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"GST Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Other Reports\",\"col\":4}}]",
     "creation": "2022-04-10 15:55:39.366617",
     "docstatus": 0,
     "doctype": "Workspace",
@@ -123,6 +123,7 @@
       "is_query_report": 0,
       "label": "GST Reports",
       "link_count": 8,
+      "link_type": "DocType",
       "onboard": 0,
       "type": "Card Break"
      },
@@ -213,9 +214,136 @@
       "onboard": 0,
       "only_for": "India",
       "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Taxation",
+      "link_count": 6,
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Tax Category",
+      "link_count": 0,
+      "link_to": "Tax Category",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Sales Taxes and Charges Template",
+      "link_count": 0,
+      "link_to": "Sales Taxes and Charges Template",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Purchase Taxes and Charges Template",
+      "link_count": 0,
+      "link_to": "Purchase Taxes and Charges Template",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Item Tax Template",
+      "link_count": 0,
+      "link_to": "Item Tax Template",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "GST HSN",
+      "link_count": 0,
+      "link_to": "GST HSN Code",
+      "link_type": "DocType",
+      "onboard": 0,
+      "only_for": "India",
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Tax Withholding Category",
+      "link_count": 0,
+      "link_to": "Tax Withholding Category",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Opening and Closing",
+      "link_count": 5,
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Opening Invoice Creation Tool",
+      "link_count": 0,
+      "link_to": "Opening Invoice Creation Tool",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Chart of Accounts Importer",
+      "link_count": 0,
+      "link_to": "Chart of Accounts Importer",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Period Closing Voucher",
+      "link_count": 0,
+      "link_to": "Period Closing Voucher",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Accounting Period",
+      "link_count": 0,
+      "link_to": "Accounting Period",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Exchange Rate Revaluation",
+      "link_count": 0,
+      "link_to": "Exchange Rate Revaluation",
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Link"
      }
     ],
-    "modified": "2022-05-31 17:53:56.403542",
+    "modified": "2022-06-14 09:23:38.447605",
     "modified_by": "Administrator",
     "module": "Accounts",
     "name": "Accounts",
@@ -238,6 +366,27 @@
       "doc_view": "List",
       "label": "Payment Entry",
       "link_to": "Payment Entry",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Bank Reconciliation Tool",
+      "link_to": "Bank Reconciliation Tool",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Sales Invoice",
+      "link_to": "Sales Invoice",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Purchase Invoice",
+      "link_to": "Purchase Invoice",
       "type": "DocType"
      },
      {

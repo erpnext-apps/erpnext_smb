@@ -1,0 +1,187 @@
+{
+    "charts": [],
+    "content": "[{\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h3\\\">Your Shortcuts</span>\",\"col\":12}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Material Request\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Order\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Receipt\",\"col\":3}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Invoice\",\"col\":3}},{\"type\":\"spacer\",\"data\":{\"col\":12}},{\"type\":\"card\",\"data\":{\"card_name\":\"Buying Reports\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Trend Reports\",\"col\":4}}]",
+    "creation": "2022-04-09 21:13:29.920339",
+    "docstatus": 0,
+    "doctype": "Workspace",
+    "for_user": "",
+    "hide_custom": 0,
+    "icon": "buying",
+    "idx": 0,
+    "label": "Purchase",
+    "links": [
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Buying Reports",
+      "link_count": 6,
+      "link_type": "DocType",
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Accounts Payable",
+      "link_count": 0,
+      "link_to": "Accounts Payable",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Accounts Payable Summary",
+      "link_count": 0,
+      "link_to": "Accounts Payable Summary",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Purchase Register",
+      "link_count": 0,
+      "link_to": "Purchase Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 1,
+      "label": "Item-wise Purchase Register",
+      "link_count": 0,
+      "link_to": "Item-wise Purchase Register",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Purchase Analytics",
+      "link_count": 0,
+      "link_to": "Purchase Analytics",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Purchase Order Analysis",
+      "link_count": 0,
+      "link_to": "Purchase Order Analysis",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Trend Reports",
+      "link_count": 3,
+      "onboard": 0,
+      "type": "Card Break"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Purchase Order Trends",
+      "link_count": 0,
+      "link_to": "Purchase Order Trends",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Purchase Receipt Trends",
+      "link_count": 0,
+      "link_to": "Purchase Receipt Trends",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     },
+     {
+      "hidden": 0,
+      "is_query_report": 0,
+      "label": "Purchase Invoice Trends",
+      "link_count": 0,
+      "link_to": "Purchase Invoice Trends",
+      "link_type": "Report",
+      "onboard": 0,
+      "type": "Link"
+     }
+    ],
+    "modified": "2022-06-14 08:48:32.712583",
+    "modified_by": "Administrator",
+    "module": "Desk",
+    "name": "Purchase",
+    "owner": "Administrator",
+    "parent_page": "",
+    "public": 1,
+    "quick_lists": [],
+    "roles": [
+     {
+      "role": "Accounts User"
+     },
+     {
+      "role": "Accounts Manager"
+     },
+     {
+      "role": "Sales User"
+     },
+     {
+      "role": "Sales Manager"
+     },
+     {
+      "role": "Purchase User"
+     },
+     {
+      "role": "Purchase Manager"
+     },
+     {
+      "role": "Stock User"
+     },
+     {
+      "role": "Stock Manager"
+     }
+    ],
+    "sequence_id": 2.0,
+    "shortcuts": [
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Material Request",
+      "link_to": "Material Request",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Purchase Order",
+      "link_to": "Purchase Order",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Purchase Receipt",
+      "link_to": "Purchase Receipt",
+      "type": "DocType"
+     },
+     {
+      "color": "Grey",
+      "doc_view": "List",
+      "label": "Purchase Invoice",
+      "link_to": "Purchase Invoice",
+      "type": "DocType"
+     }
+    ],
+    "title": "Purchase"
+   }

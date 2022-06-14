@@ -34,7 +34,11 @@ def get_fields(master):
 		"Customer Group": ["credit_limit_section"],
 		"Supplier Group": ["section_credit_limit"],
 		"Item Group": ["sb9"],
-		"Quotation": ["taxes_section", "more_info", "scan_barcode"]
+		"Quotation": ["taxes_section", "more_info", "scan_barcode"],
+		"Sales Invoice": ["is_pos", "project", "time_sheet_list", "loyalty_points_redemption", "sales_team_section_break", "subscription_section"],
+		"Sales Invoice Item": ["deferred_revenue", "project"],
+		"User": ["sb_allow_modules"],
+		"Item": ["is_fixed_asset"]
 	}
 
 	return field_map.get(master)
