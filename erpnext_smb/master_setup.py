@@ -6,12 +6,20 @@ def setup_masters():
 		hide_fields(master)
 		update_settings()
 
+	delete_stock_entry_types()
+
 
 def hide_fields(master):
 	fields = get_fields(master)
 
 	for fieldname in fields:
 		make_property_setter(master, fieldname, "hidden", 1, "Check", validate_fields_for_doctype=False)
+
+def delete_stock_entry_types():
+	allowed_types = ["Repack", "Material Transfer", "Material Receipt", "Material Issue"]
+	for d in frappe.db.get_all("Stock Entry Type"):
+		if d.name not in allowed_types:
+			frappe.delete_doc_if_exists("Stock Entry Type", d.name)
 
 def update_settings():
 	frappe.db.set_single_value('Selling Settings', {
