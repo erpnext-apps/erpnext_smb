@@ -1,6 +1,7 @@
 import frappe
 from frappe import _
 from frappe.utils import getdate
+import requests
 
 def validate_limits(doc, method):
 	plan = frappe.conf.plan
@@ -34,3 +35,15 @@ def validate_property_setter(doc, method):
 def add_plan_to_bootinfo(bootinfo):
 	bootinfo.plan = frappe.conf.plan
 	bootinfo.trial_end_date = getdate(frappe.conf.trial_end_date)
+
+@frappe.whitelist()
+def get_login_url():
+	secret_key = frappe.conf.sk_erpnext_smb
+	url = "https://frappecloud.com/api/method/press.api.developer.saas.get_login_url?secret_key={key}".format(key=secret_key)
+	response = requests.request(
+		method="POST",
+		url=url,
+		timeout=5
+	)
+
+	return response.json().get('message')
