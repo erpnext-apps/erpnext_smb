@@ -68,7 +68,6 @@ app_include_js = "erpnext_smb.bundle.js"
 # ------------
 
 # before_install = "erpnext_smb.install.before_install"
-after_install = "erpnext_smb.install.after_install"
 
 # Uninstallation
 # ------------
@@ -108,27 +107,23 @@ after_install = "erpnext_smb.install.after_install"
 
 doc_events = {
 	"User": {
-		"validate": ["erpnext_smb.install.update_module_profile"],
+		"validate": "erpnext_smb.install.validate_user_limit",
 	},
-	"User Permission": {
-		"validate": "erpnext_smb.limits.validate_limits"
-	},
-	"Role": {
-		"validate": "erpnext_smb.limits.validate_role"
+	"Company": {
+		"validate": "erpnext_smb.limits.validate_company",
 	},
 	"Custom Field": {
 		"validate": "erpnext_smb.limits.validate_custom_fields",
 	},
-	"Property Setter": {
-		"validate": "erpnext_smb.limits.validate_property_setter"
+	"Client Script": {
+		"validate": "erpnext_smb.limits.validate_client_scripts",
+	},
+	"Server Script": {
+		"validate": "erpnext_smb.limits.validate_server_scripts",
+	},
+	"DocType": {
+		"validate": "erpnext_smb.limits.validate_custom_doctypes",
 	}
-}
-
-allowed_roles = {
-	'Basic': ["Accounts Manager", "Accounts User", "Purchase Manager", "Purchase User",
-		"Sales Manager", "Sales User", "Stock User", "Stock Manager", "Item Manager",
-		"Purchase Master Manager", "Sales Master Manager", "Site Admin"],
-	'Essential': ["Manufacturing User", "Manufacturing Manager"],
 }
 
 boot_session = "erpnext_smb.limits.add_plan_to_bootinfo"

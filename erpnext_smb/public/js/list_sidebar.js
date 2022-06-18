@@ -1,5 +1,5 @@
 $(document).on('list_sidebar_setup', function () {
-	if (frappe.boot.plan == "Free") {
+	if (frappe.boot.trial_end_date) {
 		let upgrade_list = $(`<ul class="list-unstyled sidebar-menu"></ul>`).appendTo(cur_list.page.sidebar);
 
 		const content = {
@@ -22,7 +22,15 @@ $(document).on('list_sidebar_setup', function () {
 				</div>`).appendTo(upgrade_list);
 
 		upgrade_box.find('.btn-upgrade').on('click', () => {
-			window.location.href = "https://frappecloud.com/dashboard/saas/login"
+			frappe.call({
+				method: "erpnext_smb.limits.get_login_url",
+				callback: function(url) {
+					window.open(
+						url.message,
+						'_blank'
+					);
+				}
+			})
 		});
 
 		upgrade_box.find('.close').on('click', () => {
