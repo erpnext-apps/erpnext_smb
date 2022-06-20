@@ -37,7 +37,7 @@
 
   // ../erpnext_smb/erpnext_smb/public/js/index.js
   $(document).on("startup", () => {
-    if (frappe.boot.trial_end_date) {
+    if (frappe.boot.trial_end_date && frappe.boot.setup_complete) {
       let diff_days = frappe.datetime.get_day_diff(cstr(frappe.boot.trial_end_date), frappe.datetime.get_today());
       let subscription_string = __("You have {0} days remaining in your trial.", [cstr(diff_days).bold()]);
       let $bar = $(`<div class="shadow sm:rounded-lg py-2" style="position: sticky; bottom:20px; width:80%; margin: auto; border-radius: 10px; background-color: #F7FAFC; z-index: 1">
@@ -63,4 +63,4 @@
     }
   });
 })();
-//# sourceMappingURL=erpnext_smb.bundle.BWWOOX5M.js.map
+//# sourceMappingURL=erpnext_smb.bundle.22U7SRHF.js.map

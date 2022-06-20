@@ -1,5 +1,5 @@
 $(document).on('startup', () => {
-	if (frappe.boot.trial_end_date) {
+	if (frappe.boot.trial_end_date && frappe.boot.setup_complete) {
 		let diff_days = frappe.datetime.get_day_diff(cstr(frappe.boot.trial_end_date), frappe.datetime.get_today());
 		let subscription_string =  __("You have {0} days remaining in your trial.", [(cstr(diff_days)).bold()])
 		
