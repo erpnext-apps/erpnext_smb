@@ -107,22 +107,22 @@ app_include_js = "erpnext_smb.bundle.js"
 
 doc_events = {
 	"User": {
-		"validate": "erpnext_smb.limits.validate_user_limit",
+		"before_insert": "erpnext_smb.limits.validate_user_limit",
 	},
 	"Company": {
-		"validate": "erpnext_smb.limits.validate_company",
+		"before_insert": "erpnext_smb.limits.validate_company",
 	},
 	"Custom Field": {
-		"validate": "erpnext_smb.limits.validate_custom_fields",
+		"before_insert": "erpnext_smb.limits.validate_custom_fields",
 	},
 	"Client Script": {
-		"validate": "erpnext_smb.limits.validate_client_scripts",
+		"before_insert": "erpnext_smb.limits.validate_client_scripts",
 	},
 	"Server Script": {
-		"validate": "erpnext_smb.limits.validate_server_scripts",
+		"before_insert": "erpnext_smb.limits.validate_server_scripts",
 	},
 	"DocType": {
-		"validate": "erpnext_smb.limits.validate_custom_doctypes",
+		"before_insert": "erpnext_smb.limits.validate_custom_doctypes",
 	}
 }
 
