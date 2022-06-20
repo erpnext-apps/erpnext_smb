@@ -107,7 +107,7 @@ app_include_js = "erpnext_smb.bundle.js"
 
 doc_events = {
 	"User": {
-		"validate": "erpnext_smb.install.validate_user_limit",
+		"validate": "erpnext_smb.limits.validate_user_limit",
 	},
 	"Company": {
 		"validate": "erpnext_smb.limits.validate_company",
