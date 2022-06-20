@@ -35,7 +35,7 @@ def validate_company(doc, method):
 
 def validate_custom_doctypes(doc, method):
 	plan = frappe.conf.plan
-	count = frappe.db.count("DocType", {"is_custom": 1})
+	count = frappe.db.count("DocType", {"custom": 1})
 
 	if plan == "Basic" and count >= 0:
 		frappe.throw(_("No custom forms allowed as per your plan"), exc=PaywallReachedError)
