@@ -1,7 +1,7 @@
 from . import __version__ as app_version
 
 app_name = "erpnext_smb"
-app_title = "ERPNext SMB"
+app_title = "ERPNext"
 app_publisher = "Frappe Technologies"
 app_description = "ERPNext SMB Setup"
 app_icon = "octicon octicon-file-directory"
