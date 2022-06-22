@@ -37,7 +37,7 @@ def validate_custom_doctypes(doc, method):
 	plan = frappe.conf.plan
 	count = frappe.db.count("DocType", {"custom": 1})
 
-	if plan == "Basic" and count >= 0:
+	if plan == "Basic" and count > 0:
 		frappe.throw(_("No custom forms allowed as per your plan"), exc=PaywallReachedError)
 	elif plan == "Essential" and count >= 5:
 		frappe.throw(_("Only 5 custom forms are allowed as per your plan"), exc=PaywallReachedError)
@@ -46,7 +46,7 @@ def validate_client_scripts(doc, method):
 	plan = frappe.conf.plan
 	count = frappe.db.count("Client Script", {"disabled": 0})
 
-	if plan == "Basic" and count >= 0:
+	if plan == "Basic" and count > 0:
 		frappe.throw(_("No client scripts allowed as per your plan"), exc=PaywallReachedError)
 	elif plan == "Essential" and count >= 10:
 		frappe.throw(_("Only 10 client scripts are allowed as per your plan"), exc=PaywallReachedError)
@@ -55,7 +55,7 @@ def validate_server_scripts(doc, method):
 	plan = frappe.conf.plan
 	count = frappe.db.count("Server Script", {"disabled": 0})
 
-	if plan == "Basic" and count >= 0:
+	if plan == "Basic" and count > 0:
 		frappe.throw(_("No server scripts allowed as per your plan"), exc=PaywallReachedError)
 	elif plan == "Essential" and count >= 10:
 		frappe.throw(_("Only 10 server scripts are allowed as per your plan"), exc=PaywallReachedError)
