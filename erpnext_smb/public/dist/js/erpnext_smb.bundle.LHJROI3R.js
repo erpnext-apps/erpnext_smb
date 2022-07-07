@@ -66,7 +66,7 @@
       frappe.call({
         method: "erpnext_smb.limits.get_login_url",
         callback: function(url) {
-          $(`<a class="dropdown-item" 				href="${url.message}">` + __("Manage Subscription") + '</a>				<div class="divider"></div>').insertBefore(help_menu);
+          $(`<a class="dropdown-item" 				href="${url.message}" target="_blank">` + __("Manage Subscription") + '</a>				<div class="divider"></div>').insertBefore(help_menu);
         }
       });
     }
@@ -98,4 +98,4 @@
     });
   };
 })();
-//# sourceMappingURL=erpnext_smb.bundle.TFHKUKAV.js.map
+//# sourceMappingURL=erpnext_smb.bundle.LHJROI3R.js.map

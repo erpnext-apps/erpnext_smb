@@ -39,7 +39,7 @@ $(document).on('startup', () => {
 			method: "erpnext_smb.limits.get_login_url",
 			callback: function(url) {
 				$(`<a class="dropdown-item" \
-				href="${url.message}">` + __('Manage Subscription') + '</a>\
+				href="${url.message}" target="_blank">` + __('Manage Subscription') + '</a>\
 				<div class="divider"></div>').insertBefore(help_menu);
 				}
 		})
