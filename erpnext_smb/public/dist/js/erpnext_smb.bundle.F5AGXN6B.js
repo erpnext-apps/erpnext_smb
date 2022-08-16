@@ -6,7 +6,7 @@
       const content = {
         renew: {
           title: "Go Premium",
-          body: `Your don't have a subscription yet, upgrade to keep using ERPNext.`,
+          body: `You don't have a subscription yet, upgrade to keep using ERPNext.`,
           button: "Subscribe"
         }
       };
@@ -98,4 +98,4 @@
     });
   };
 })();
-//# sourceMappingURL=erpnext_smb.bundle.LHJROI3R.js.map
+//# sourceMappingURL=erpnext_smb.bundle.F5AGXN6B.js.map

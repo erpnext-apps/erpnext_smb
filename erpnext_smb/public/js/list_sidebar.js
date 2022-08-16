@@ -5,7 +5,7 @@ $(document).on('list_sidebar_setup', function () {
 		const content = {
 			renew: {
 				title: 'Go Premium',
-				body: `Your don't have a subscription yet, upgrade to keep using ERPNext.`,
+				body: `You don't have a subscription yet, upgrade to keep using ERPNext.`,
 				button: 'Subscribe'
 			}
 		}
